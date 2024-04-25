@@ -15,10 +15,11 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
-  it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/?ip=127.0.0.1')
-      .expect(404)
-      .expect('нет данных по этому ip');
+  it('/ (GET) 127.0.0.1', () => {
+    return request(app.getHttpServer()).get('/?ip=127.0.0.1').expect(404).expect({
+      message: 'нет данных по этому ip',
+      error: 'Not Found',
+      statusCode: 404,
+    });
   });
 });
