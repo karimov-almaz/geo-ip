@@ -10,7 +10,6 @@ export class AppService {
     this.geoInformator = new GeoLiteInfo();
   }
   async getGeoInfo(ip: string): Promise<GeoResponseDto> {
-    console.log(ip)
     return await this.geoInformator.getGeoInfo(ip);
   }
 }
