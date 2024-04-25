@@ -8,8 +8,8 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder()
-    .setTitle('Swagger example')
-    .setDescription('The super API description')
+    .setTitle('Geo IP Documentation')
+    .setDescription('Описание API Geo IP')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
