@@ -11,6 +11,12 @@ http://localhost:3000/docs
 ```bash
 $ npm install
 ```
+## SDK
+usage example
+```bash
+$ tsc ./sdk/sdk-usage-example.ts --outDir ./sdk/dist
+$ node sdk/dist/sdk-usage-example.js
+```
 build sdk
 ```bash
 $ npx nest-sdk-generator sdk/sdk-generator.json
