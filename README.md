@@ -11,6 +11,11 @@ http://localhost:3000/docs
 ```bash
 $ npm install
 ```
+build sdk
+```bash
+$ npx nest-sdk-generator sdk/sdk-generator.json
+```
+
 
 ## Running the app
 
